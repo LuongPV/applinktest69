@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class InvalidController {
 
-	@RequestMapping("/fail")
+	@RequestMapping("/testAPI")
 	public String fail() {
-		throw new IllegalStateException("this endpoint always fail");
+		return "data";
 	}
 
 }
